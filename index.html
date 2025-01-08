@@ -21,9 +21,9 @@
         <br>
         <br>
         <main>
-            <h1>Portfolio</h1>
+            <h1>Adrien Dejonc</h1>
                 <section id="sobre">
-                    <h2>Sobre</h2>
+                    <h2>Sobre:</h2>
                     <ul>
                     <li>Adrien Dejonc</li>
                     <li>31 Anos</li>
@@ -33,23 +33,39 @@
                 </section>
                 <br>
                 <section id="educacao">
-                    <h2>Educação</h2>
+                    <h2>Educação:</h2>
                     <ul>
                     <li>2013 - Curso de Programação e Técnico em Redes</li>
                     <li>2024/2026 - Curso ETIC Web Dev</li>
                     </ul>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BSc3ZiqlvZg?si=9icuZyIj9qoXSx25" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </section>
                 <br>
                 <section id="experiencia">
-                    <h3>Experiencia</h3>
-                    <ul>
-                    <li>N/A</li>
-                    <li>N/A</li>
-                    </ul>
+                    <h2>Experiencia:</h2>
+                    <br>
+                    <table border="0">
+                        <thead>
+                            <tr>
+                            <th>Experiencia</th>
+                            <th>Duração</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            </tr>
+                            <tr>
+                            <td>N/A</td>
+                            <td>N/A</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </section>
-                <br>
+                <br><br><br>
                 <section id="contacto">
-                    <h4>Contacto</h4>
+                    <h2>Contacto:</h2>
                     <div>
                         <a href="https://www.github.com"><img src="images/github.png" width="100"></a>
                         <a href="https://www.linkedin.com"><img src="images/linkedin.png" width="100"></a>
@@ -58,12 +74,47 @@
                     </div>
                 </section>
                 <br>
+                <section id="contacte-me">
+                    <h2>Contacta-me:</h2>
+                    <form action="/contact-me" method="POST">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="John" required>
+                        <label for="apelido">Apelido:</label>
+                        <input type="text" id="apelido" name="apelido" placeholder="Doe" required>
+                        <br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="john.doe@gmail.com" required>
+                        <br><br>
+                        <label for="telemovel">Telemóvel:</label>
+                        <input type="tel" id="telemovel" name="telemovel" placeholder="912345678" required>
+                        <br><br>
+                        <label for="cars">Indique a sua região:</label>
+                        <select name="regiao" id="regiao">
+                        <option value="norte">Norte</option>
+                        <option value="centro">Centro</option>
+                        <option value="sul">Sul</option>
+                        </select>
+                        <br><br>
+                        <label for="tipo_contacto">Tipo de contacto:</label>
+                        <input type="radio" id="freelance" name="tipo_contacto" value="Freelance"> Freelance 
+                        <input type="radio" id="contacto" name="tipo_contacto" value="Contacto"> Contacto 
+                        <input type="radio" id="informacao" name="tipo_contacto" value="Informacao"> Informação 
+                        <br><br>
+                        <label for="mensagem">Mais informações sobre o assunto do contacto:</label>
+                        <br>
+                        <textarea id="mensagem" name="mensagem" rows="3" cols="50" placeholder="Deixe aqui a sua mensagem..."></textarea>
+                        <br><br>
+                        
+                        <br><br>
+                        <button type="submit">Enviar!</button>
+                    </form>
+                </section>
         </main>
         <footer>
             <br>
             <br>
             <br>
-            <p>Copyright &copy; 2025 <span>Adrien Dejonc</span>. All Rights Reserved.</p>
+            <p><b>Copyright &copy; 2025 <b>Adrien Dejonc</b>. All Rights Reserved.</b></p>
         </footer>
     </body>
 </html>
