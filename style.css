@@ -4,7 +4,7 @@ body {
 }
 
 main {
-    min-height: calc(100vh - 114.5px);
+    min-height: calc(100vh - 74.8px);
 }
 
 header {
@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 10px;
     width: 100%;
 }
 
@@ -38,12 +38,13 @@ header {
 .navbar a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    -webkit-text-stroke: 1px black;
 }
 
 .navbar nav a:hover {
     color: rgb(243, 243, 243);
-    transition: color 0.3s;
+    transition: color 0.5s;
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
 }
 
 .container {
@@ -56,44 +57,61 @@ header {
 }
 
 .vl {
-  border-left: 6px solid rgb(21,236,163);
-  min-height: calc(100vh - 114.5px - 30px);
+  border-left: 6px solid rgb(0, 0, 0);
   z-index: 1;
   margin-left: 50%;
+  margin-top: 100px;
   position: absolute;
+  height: 25rem;
 }
 
 .box1 {
-    background-color: rgba(255, 252, 252, 0);
-    width: 600px;
+    background-color: rgba(21,236,163);
+    width: 500px;
     border: 5px solid rgb(0, 0, 0);
     padding: 10px;
     border-radius: 20px;
-    margin-right: 50rem;
-    margin-top: 10rem;
+    margin-right: 25rem;
+    margin-top: 5rem;
     z-index: 1;
     position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .box2 {
-    background-color: rgba(255, 252, 252, 0);
-    width: 300px;
+    background-color: rgba(21,236,163);
+    width: 500px;
     border: 5px solid rgb(0, 0, 0);
     padding: 10px;
     border-radius: 20px;
-    margin-right: 50rem;
-    margin-top: 10rem;
+    margin-left: 25rem;
+    margin-top: 17.5rem;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 .box3 {
-    background-color: rgba(255, 252, 252, 0);
-    width: 300px;
+    background-color: rgba(21,236,163);
+    width: 500px;
     border: 5px solid rgb(0, 0, 0);
     padding: 10px;
     border-radius: 20px;
-    margin-right: 50rem;
-    margin-top: 10rem;
+    margin-right: 25rem;
+    margin-top: 30rem;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -116,6 +134,10 @@ header {
     color: rgb(21,236,163);
     justify-content: center;
     display: block;
+    z-index: 4;
+    position: absolute;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
 }
 
 .image_link {
