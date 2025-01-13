@@ -7,7 +7,7 @@ body {
 }
 
 main {
-    min-height: calc(100vh - 74.8px);
+    min-height: calc(100vh - 84px);
 }
 
 header {
@@ -149,10 +149,31 @@ header {
 
 .box4 {
     color: white;
-    width: 900px;
     border: 5px solid rgb(255, 255, 255);
     padding: 10px;
-    padding-left: 200px;
+    padding: 10px 100px 10px 100px;
+    border-radius: 20px;
+    margin-top: 45rem;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    box-shadow: 0 3px 5px rgb(255, 255, 255);
+    background-image: url("images/bg.jpg");
+    background-repeat:inherit;
+    background-size: cover;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    filter: drop-shadow(0 0 0.75rem rgb(126, 3, 192));
+}
+
+.box5 {
+    color: white;
+    border: 5px solid rgb(255, 255, 255);
+    padding: 10px;
+    padding: 10px 100px 10px 100px;
     border-radius: 20px;
     margin-top: 45rem;
     z-index: 1;
@@ -180,7 +201,7 @@ header {
     justify-content: center;
     display: block;
     z-index: 4;
-    position: absolute;
+    position: relative;
     justify-content: space-between;
     padding: 20px 0 20px 0;
 }
