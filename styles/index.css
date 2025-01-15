@@ -1,5 +1,8 @@
 html {
-    background-color: #0b0b0b;
+    background-image: url('/a.dejonc_portfolio/images/bg.png');
+    background-repeat: inherit;
+    background-size: cover;
+    /* background-color: #0b0b0b; */
 }
 
 body { 
@@ -15,6 +18,7 @@ main {
     border-bottom: 5px;
     border-color: white;
     flex: 1;
+
 }
 
 header {
