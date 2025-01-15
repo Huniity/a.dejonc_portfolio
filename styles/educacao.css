@@ -1,13 +1,13 @@
 html {
-    background-color: #0b0b0b;
+    background-image: url('/a.dejonc_portfolio/images/bg.png');
+    background-repeat: inherit;
+    background-size: cover;
+    /* background-color: #0b0b0b; */
 }
 
 body { 
     font-family: 'Orbitron', sans-serif;
     margin: 0px;
-    background-repeat: inherit;
-    background-size: cover;
-
 }
 
 main {
