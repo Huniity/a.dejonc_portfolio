@@ -7,12 +7,11 @@ html {
 
 body { 
     font-family: 'Orbitron', sans-serif;
-    margin: 0px;
-    min-height: 100vh;
+    margin: 0 auto;
 }
 
 main {
-    min-height: calc(100vh - 80.29px);
+    margin: 0 auto;
 }
 
 header {
@@ -63,8 +62,8 @@ header {
     transition: transform 0.4s ease;
 }
 
-header .container {
-    max-width: 1024px;
+.navbar_container {
+    max-width: 1920px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -72,13 +71,10 @@ header .container {
     align-items: center;
 }
 
-main .container {
-    max-width: 1024px;
+.main_container {
     margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 1920px;
+    min-height: calc(100vh - 80.29px);
 }
 
 .title {
@@ -113,7 +109,6 @@ main .container {
 
 .box1 {
     color: white;
-    width: 500px;
     border: 5px solid rgb(255, 255, 255);
     padding: 10px;
     border-radius: 20px;
@@ -131,7 +126,6 @@ main .container {
 
 .box2 {
     color: white;
-    width: 500px;
     border: 5px solid rgb(255, 255, 255);
     padding: 10px;
     border-radius: 20px;
@@ -150,7 +144,6 @@ main .container {
 
 .box3 {
     color: white;
-    width: 500px;
     border: 5px solid rgb(255, 255, 255);
     padding: 10px;
     border-radius: 20px;
@@ -171,7 +164,6 @@ main .container {
 }
 
 .box4 {
-    width: 720px;
     color: white;
     border: 5px solid rgb(255, 255, 255);
     padding: 10px;
@@ -191,7 +183,6 @@ main .container {
 }
 
 .box5 {
-    width: 720px;
     color: white;
     border: 5px solid rgb(255, 255, 255);
     padding: 10px 115px 10px 85px;
@@ -210,10 +201,8 @@ main .container {
 }
 
 .box6 {
-    width: 670px;
     color: white;
     border: 5px solid rgb(255, 255, 255);
-    padding: 10px;
     padding: 10px 100px 10px 150px;
     border-radius: 20px;
     z-index: 1;

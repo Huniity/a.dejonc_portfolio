@@ -1,11 +1,68 @@
-.parent {
+.card {
+    color: white;
+    padding: 1rem;
+}
+
+.cards {
+    max-width: 1920px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer_container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: grid;
+}
+
+.contact-form {
+    display: grid;
+}
+
+.card:nth-child(4n-2) {
+    display: flex;
+    align-items: flex-end;
+}
+
+.card:nth-child(4n-1) {
+    display: grid;
+    grid-column: span 2;
+}
+
+@media (max-width: 1440px) {
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
     }
-    
-    .div1 { grid-area: 5 / 1 / 6 / 7; }
-    .div2 { grid-area: 1 / 4 / 5 / 7; }
-    .div3 { grid-area: 1 / 1 / 5 / 4; }
+    .card:nth-child(4n-1) {
+        display: grid;
+        grid-column: span 2;
+    }
+
+}
+
+@media (max-width: 768px){
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card:nth-child(4n-1) {
+        display: grid;
+        grid-column: span 1;
+    }
+
+}
+
+@media (max-width: 375px){
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card:nth-child(4n-1) {
+        display: grid;
+        grid-column: span 1;
+    }
+
+}
