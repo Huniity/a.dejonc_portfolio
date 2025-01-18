@@ -8,10 +8,12 @@ html {
 body { 
     font-family: 'Orbitron', sans-serif;
     margin: 0 auto;
+
 }
 
 main {
     margin: 0 auto;
+    max-width: 1920px;
 }
 
 header {
@@ -79,17 +81,12 @@ header {
 
 .title {
     color: rgb(243, 243, 243);
-    font-size: 80px;
-    position: absolute;
-    z-index: 1;
+    font-size: 5rem;
     text-shadow: 1px 1px 2px rgb(0, 55, 255), 0 0 1em rgba(0, 247, 255, 0.527), 0 0 0.2em rgba(0, 255, 247, 0.516);
     filter: drop-shadow(0 0 0.75rem rgba(0, 247, 255, 0.305));
 }
 
 .top_main {
-    position: absolute;
-    z-index: 2;
-    padding-top: 150px;
     text-shadow: 1px 1px 2px rgb(0, 55, 255), 0 0 1em rgb(0, 247, 255), 0 0 0.2em rgb(0, 255, 247);
     filter: drop-shadow(0 0 0.75rem rgb(0, 247, 255));
 }
@@ -110,7 +107,6 @@ header {
 .box1 {
     color: white;
     border: 5px solid rgb(255, 255, 255);
-    padding: 10px;
     border-radius: 20px;
     z-index: 1;
     position: absolute;
@@ -127,7 +123,6 @@ header {
 .box2 {
     color: white;
     border: 5px solid rgb(255, 255, 255);
-    padding: 10px;
     border-radius: 20px;
     z-index: 1;
     position: absolute;
@@ -145,7 +140,6 @@ header {
 .box3 {
     color: white;
     border: 5px solid rgb(255, 255, 255);
-    padding: 10px;
     border-radius: 20px;
     z-index: 1;
     position: absolute;
@@ -166,8 +160,6 @@ header {
 .box4 {
     color: white;
     border: 5px solid rgb(255, 255, 255);
-    padding: 10px;
-    padding: 10px 100px 10px 100px;
     border-radius: 20px;
     z-index: 1;
     position: absolute;
@@ -182,13 +174,14 @@ header {
     filter: drop-shadow(0 0 0.75rem rgb(0, 247, 255));
 }
 
+
+
 .box5 {
     color: white;
     border: 5px solid rgb(255, 255, 255);
-    padding: 10px 115px 10px 85px;
     border-radius: 20px;
     z-index: 1;
-    position: absolute;
+    position: relative;
     text-align: center;
     display: flex;
     align-items: center;
@@ -203,7 +196,6 @@ header {
 .box6 {
     color: white;
     border: 5px solid rgb(255, 255, 255);
-    padding: 10px 100px 10px 150px;
     border-radius: 20px;
     z-index: 1;
     position: absolute;

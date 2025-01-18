@@ -1,68 +1,33 @@
-.card {
+.cards_main {
+    margin-top: 5%;
+    margin-bottom: 15%;
+    max-width: 1920px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+.card_main {
+    background-color: dodgerblue;
     color: white;
     padding: 1rem;
-}
+    height: 4rem;
+  }
 
-.cards {
-    max-width: 1920px;
-    margin: 0 auto;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.footer_container {
-    max-width: 1920px;
-    margin: 0 auto;
-}
-
-.contact-info {
-    display: grid;
-}
-
-.contact-form {
-    display: grid;
-}
-
-.card:nth-child(4n-2) {
-    display: flex;
-    align-items: flex-end;
-}
-
-.card:nth-child(4n-1) {
-    display: grid;
-    grid-column: span 2;
-}
-
-@media (max-width: 1440px) {
+  @media (max-width: 1920px) {
     .cards {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .card:nth-child(4n-1) {
-        display: grid;
-        grid-column: span 2;
-    }
-
 }
 
 @media (max-width: 768px){
     .cards {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .card:nth-child(4n-1) {
-        display: grid;
-        grid-column: span 1;
-    }
-
 }
 
 @media (max-width: 375px){
     .cards {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .card:nth-child(4n-1) {
-        display: grid;
-        grid-column: span 1;
-    }
-
 }
