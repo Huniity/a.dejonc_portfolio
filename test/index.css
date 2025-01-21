@@ -13,7 +13,7 @@ body {
 
 main {
     margin: 0 auto;
-    max-width: 1920px;
+    max-width: 1440px;
 }
 
 header {
@@ -21,7 +21,7 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.446);
     box-shadow: 0 3px 5px black;
     max-width: 95%;
-    margin: 0 auto;
+    margin: 2.5%;
     border-radius: 10px;
 }
 
@@ -37,7 +37,7 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
-    font-size: 20px;
+    font-size: 1.5vw;
     padding-top: 1%;
     padding-right: 3.5%;
     padding-bottom: 1%;
@@ -65,7 +65,7 @@ header {
 }
 
 .navbar_container {
-    max-width: 1920px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -75,156 +75,8 @@ header {
 
 .main_container {
     margin: 0 auto;
-    max-width: 1920px;
+    max-width: 1440px;
     min-height: calc(100vh - 80.29px);
-}
-
-.title {
-    color: rgb(243, 243, 243);
-    font-size: 5rem;
-    text-shadow: 1px 1px 2px rgb(0, 55, 255), 0 0 1em rgba(0, 247, 255, 0.527), 0 0 0.2em rgba(0, 255, 247, 0.516);
-    filter: drop-shadow(0 0 0.75rem rgba(0, 247, 255, 0.305));
-}
-
-.top_main {
-    text-shadow: 1px 1px 2px rgb(0, 55, 255), 0 0 1em rgb(0, 247, 255), 0 0 0.2em rgb(0, 255, 247);
-    filter: drop-shadow(0 0 0.75rem rgb(0, 247, 255));
-}
-
-.vl {
-  border-left: 4px solid rgb(255, 255, 255);
-  z-index: 1;
-  position: absolute;
-  height: 20px;
-  box-shadow: 0 3px 5px rgb(255, 255, 255);
-}
-
-.all_box {
-    padding-top: 550px;
-    
-}
-
-.box1 {
-    color: white;
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 3px 5px rgb(255, 255, 255);
-    background-color: rgb(6, 6, 6);
-    text-shadow: 1px 1px 2px rgb(0, 55, 255), 0 0 1em rgb(0, 247, 255), 0 0 0.2em rgb(0, 255, 247);
-    filter: drop-shadow(0 0 0.75rem rgb(0, 247, 255));
-}
-
-.box2 {
-    color: white;
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 3px 5px rgb(255, 255, 255);
-    background-color: rgb(6, 6, 6);
-    text-shadow: 1px 1px 2px rgb(0, 55, 255), 0 0 1em rgb(0, 247, 255), 0 0 0.2em rgb(0, 255, 247);
-    filter: drop-shadow(0 0 0.75rem rgb(0, 247, 255));
-}
-
-
-.box3 {
-    color: white;
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 3px 5px rgb(255, 255, 255);
-    background-color: rgb(6, 6, 6);
-    text-shadow: 1px 1px 2px rgb(0, 55, 255), 0 0 1em rgb(0, 247, 255), 0 0 0.2em rgb(0, 255, 247);
-    filter: drop-shadow(0 0 0.75rem rgb(0, 247, 255));
-}
-
-.box_ico{
-    filter: drop-shadow(0 0 0.75rem rgba(0, 247, 255, 0.642));
-}
-
-.box4 {
-    color: white;
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 40px;
-    box-shadow: 0 3px 5px rgb(255, 255, 255);
-    background-color: rgb(6, 6, 6);
-    text-shadow: 1px 1px 2px rgb(0, 55, 255), 0 0 1em rgb(0, 247, 255), 0 0 0.2em rgb(0, 255, 247);
-    filter: drop-shadow(0 0 0.75rem rgb(0, 247, 255));
-}
-
-
-
-.box5 {
-    color: white;
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    z-index: 1;
-    position: relative;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 40px;
-    box-shadow: 0 3px 5px rgb(255, 255, 255);
-    background-color: rgb(6, 6, 6);
-    text-shadow: 1px 1px 2px rgb(0, 55, 255), 0 0 1em rgb(0, 247, 255), 0 0 0.2em rgb(0, 255, 247);
-    filter: drop-shadow(0 0 0.75rem rgb(0, 247, 255));
-}
-
-.box6 {
-    color: white;
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    z-index: 1;
-    position: absolute;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 40px;
-    box-shadow: 0 3px 5px rgb(255, 255, 255);
-    background-color: rgb(6, 6, 6);
-    text-shadow: 1px 1px 2px rgb(0, 55, 255), 0 0 1em rgb(0, 247, 255), 0 0 0.2em rgb(0, 255, 247);
-    filter: drop-shadow(0 0 0.75rem rgb(0, 247, 255));
-}
-
-.box7 {
-    padding: 10px 0 100px 0;
-    font-size: 16px;
-    width: 100%;
-    color: white;
-    border-top: 1px solid rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(255, 255, 255);
-    z-index: 1;
-    position: absolute;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    box-shadow: 0 3px 5px rgb(255, 255, 255);
-    background-image: linear-gradient(to bottom, #000000, #010101, #020201, #020202, #030303, #040404, #060606, #070707, #0a0a0a, #0c0c0c, #0e0e0e, #101010);
 }
 
 .footer {
