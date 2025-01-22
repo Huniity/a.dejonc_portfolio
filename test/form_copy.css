@@ -137,6 +137,14 @@
         grid-column: span 1;
     }
 
+    .contact-info {
+        margin-left: 70px;    
+    }
+
+    .contact-column {
+        margin-left: 75px;    
+    }
+
 }
 
 @media (max-width: 375px){
