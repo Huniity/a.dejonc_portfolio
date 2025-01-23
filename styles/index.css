@@ -364,7 +364,7 @@ header {
   .dark h1, .dark th, .dark td, .dark h2, .dark p, .dark h3, .dark h4 {
     color: black;
    }
-   
+
  .dark .box_ico {
     -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
@@ -440,6 +440,18 @@ header {
 
 @media (max-width: 768px) {
 
+    #dark-mode-toggle-sun {
+        display: none;
+        width: 20px;
+        height: 20px;
+      }
+      
+      #dark-mode-toggle-moon {
+        width: 20px;
+        height: 20px;
+      }
+      
+
     canvas {
         padding-top: 250px;
         width:100%;
@@ -485,6 +497,18 @@ header {
 }
 
 @media (max-width: 425px) {
+
+    #dark-mode-toggle-sun {
+        display: none;
+        width: 20px;
+        height: 20px;
+      }
+      
+      #dark-mode-toggle-moon {
+        width: 20px;
+        height: 20px;
+      }
+      
 
     canvas {
         padding-top: 250px;
@@ -560,6 +584,22 @@ header {
 }
 
 @media (max-width: 375px) {
+
+    #dark-mode-toggle-sun {
+        display: none;
+        width: 20px;
+        height: 20px;
+      }
+      
+      #dark-mode-toggle-moon {
+        width: 20px;
+        height: 20px;
+      }
+      
+
+    button {
+        margin-right: 1px;
+    }
 
     canvas {
         padding-top: 250px;
