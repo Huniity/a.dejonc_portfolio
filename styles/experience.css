@@ -82,7 +82,7 @@
         font-size:x-large;
         font-weight: bold;
         box-shadow: 0 1px 5px rgb(0, 0, 0);
-        background-color: #00000060;
+        background-color: #00000046;
     }
 
     p {
@@ -110,7 +110,7 @@
   #flip-card-front {
     box-shadow: 0 0 5px rgb(22,22,22);
     background-color: rgba(27, 27, 27, 0);
-    background-image: url(../images/bg.png);
+    background-image: url("./images/bg.png");
     background-repeat: inherit;
     background-size: cover;
     color: #aaa;
