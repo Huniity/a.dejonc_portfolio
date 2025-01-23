@@ -182,7 +182,7 @@ function start() {
 
         const hasDarkMode = window.localStorage.getItem("darkMode");
             if (hasDarkMode) {
-                context.fillStyle = "rgba(255, 0, 0, 0)";
+                context.fillStyle = "#000000";
                 context.beginPath();
                 context.arc(star.x, star.y, star.radius, 0, Math.PI * 2, false);
                 context.fill();
@@ -201,6 +201,7 @@ function start() {
             currentTrailLength = (maxTrailLength * p.trailLengthDelta),
             pos = lineToAngle(x, y, -currentTrailLength, p.getHeading());
 
+            
         context.fillStyle = "rgba(255, 255, 255, " + p.opacity + ")";
         // context.beginPath();
         // context.arc(x, y, p.radius, 0, Math.PI * 2, false);

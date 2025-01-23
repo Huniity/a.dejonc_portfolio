@@ -351,7 +351,7 @@ header {
   }
   
   .dark main {
-   background-image: linear-gradient(to left top, #d16ba5, #ba87d6, #8ea4f8, #50bfff, #00d5ff, #00d5fd, #00d5fc, #00d5fa, #00c0ff, #00a7ff, #0088ff, #685ffb);
+   background-color: linear-gradient(to left top, #d16ba5, #ba87d6, #8ea4f8, #50bfff, #00d5ff, #00d5fd, #00d5fc, #00d5fa, #00c0ff, #00a7ff, #0088ff, #685ffb);
   }
   .dark .box1, .dark .box2, .dark .box3, .dark .box4, .dark .box5, .dark .box6, .dark .box7 {
     color: black !important;
