@@ -501,6 +501,8 @@ header {
 
 @media (max-width: 425px) {
 
+
+
     .navbar nav {
         gap: 10px;
     }
@@ -534,7 +536,7 @@ header {
     .cards_main {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
-    
+        padding: 0 10px 0 10px;
     }
 
     .home-button img{
