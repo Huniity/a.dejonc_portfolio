@@ -72,6 +72,8 @@
     border-color: #e1b000;
 }
 
+
+
 .contact-form button {
     background: linear-gradient(180deg, #06cef1, #000001);
     border: none;
@@ -114,6 +116,7 @@
     display: grid;
     grid-column: span 2;
 }
+
 
 @media (max-width: 1440px) {
     .cards {

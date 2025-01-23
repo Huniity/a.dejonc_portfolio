@@ -307,6 +307,7 @@ header {
     padding: 20px 0 20px 0;
 }
 
+
 .copyright {
     width: 100%;
     border-top: 1px solid rgb(255, 255, 255);
@@ -318,8 +319,88 @@ header {
 }
 
 
+#dark-mode-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+  }
+  
+  #dark-mode-toggle-sun {
+    display: none;
+    width: 30px;
+    height: 30px;
+  }
+  
+  #dark-mode-toggle-moon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .dark #dark-mode-toggle-sun {
+    display: block;
+  }
+  
+  .dark #dark-mode-toggle-moon {
+    display: none;
+  }
+  
+  .dark #dark-mode-toggle {
+    color: white;
+  }
+  
+  .dark main {
+   background-image: linear-gradient(to left top, #d16ba5, #ba87d6, #8ea4f8, #50bfff, #00d5ff, #00d5fd, #00d5fc, #00d5fa, #00c0ff, #00a7ff, #0088ff, #685ffb);
+  }
+  .dark .box1, .dark .box2, .dark .box3, .dark .box4, .dark .box5, .dark .box6, .dark .box7 {
+    color: black !important;
+    border-color: black;
+    background-color: rgba(218, 160, 1, 0.986);
+    box-shadow: 0 1px 20px rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+  }
+  .dark h1, .dark th, .dark td, .dark h2, .dark p, .dark h3, .dark h4 {
+    color: black;
+   }
+ .dark .box_ico{
+    filter: drop-shadow(0 1px 10px rgb(0, 0, 0));
+}
+
+.dark p.email {
+    color: black;
+}
+
+.dark .contact-info h2 {
+    color: black;
+}
+
+.dark .contact-info p {
+    color: black;
+}
+
+.dark .contact-form input {
+    border: 1px solid #000000;
+}
+
+.dark .contact-form textarea {
+    border: 1px solid #000000;
+}
+
+.dark .contact-form button {
+    color: black;
+    background: linear-gradient(125deg, #06cef1, #dd62f0);
+}
+
+.dark canvas {
+    background-image: linear-gradient(to right bottom, #685ffb, #0088ff, #00a7ff, #00c0ff, #00d5fa, #00d5fa, #00d5fa, #00d5fa, #00c0ff, #00a7ff, #0088ff, #685ffb);
+}
+
 @media (max-width: 1440px) {
-    
+    .vl {
+        height: 2300px
+    }
     canvas {
         padding-top: 150px;
         width:100%;
@@ -374,7 +455,7 @@ header {
     }
 
     .vl {
-        height: 2500px
+        height: 2300px
     }
 
     .dev_ico1 {
