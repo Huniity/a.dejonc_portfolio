@@ -179,10 +179,20 @@ function start() {
     }
 
     function drawStar(star) {
-        context.fillStyle = "rgb(255, 221, 157)";
-        context.beginPath();
-        context.arc(star.x, star.y, star.radius, 0, Math.PI * 2, false);
-        context.fill();
+
+        const hasDarkMode = window.localStorage.getItem("darkMode");
+            if (hasDarkMode) {
+                context.fillStyle = "rgba(255, 0, 0, 0)";
+                context.beginPath();
+                context.arc(star.x, star.y, star.radius, 0, Math.PI * 2, false);
+                context.fill();
+            } 
+            else {
+            context.fillStyle = "rgb(255, 221, 157)";
+            context.beginPath();
+            context.arc(star.x, star.y, star.radius, 0, Math.PI * 2, false);
+            context.fill();
+        }
     }
 
     function drawShootingStar(p) {
