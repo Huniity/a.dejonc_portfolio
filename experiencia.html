@@ -1,84 +1,194 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
-    <head>
-        <title>Adrien Dejonc | Experiencia</title>
-        <link rel="icon" href="images/dev.png" type="image/x-icon">
-        <meta name="author" content="Adrien Dejonc">
-        <meta name="experience" content="experiencia">
-        <meta name="keywords" content="experience, portfolio, data">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/experiencia.css">
-        <link rel="stylesheet" href="styles/form.css">
-    </head>
+<html lang="en">
+
+<head>
+    <title>Adrien Dejonc | Portfolio</title>
+    <link rel="icon" href="../images/dev.png" type="image/x-icon">
+    <meta name="author" content="Adrien Dejonc">
+    <meta name="portfolio" content="my portfolio">
+    <meta name="keywords" content="portfolio, etic, dev, frontend, backend">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../test/test.css">
+    <link rel="stylesheet" href="../test/form.css">
+    <link rel="stylesheet" href="../test/experience.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 <body>
+    <canvas id="canvas"></canvas>
     <main>
-        <script src="scripts/main.js"></script>
         <header>
-            <div class="container" id="navbar"></div>
-        </header>  
-    </header>
-    <section id="experiencia">
-        <h2>Experiencia:</h2>
-        <br>
-        <table border="0">
-            <thead>
-                <tr>
-                <th>Experiencia</th>
-                <th>Duração</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td>N/A</td>
-                <td>N/A</td>
-                </tr>
-                <tr>
-                <td>N/A</td>
-                <td>N/A</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <div class="box7">
-        <div id="contact_me" class="contact-info">
-            <h2>DO YOU HAVE A PROJECT TO DISCUSS?</h2>
-            <p>GET IN TOUCH<img class="dev_ico1" src="images/chat (1).png" width="30" height="30"></p>
-            <div class="contact-details">
-                <div class="contact-column">
-                    <h3>Contact</h3>
-                    <p class="email">adrien_dejonc@eticalgarve.com</p>
+            <div class="navbar_container" id="navbar"></div>
+        </header>
+        <div class="main_container">
+            <h1 class="title_project">MY PROJECTS</h1>
+            <button class="flip_button" onclick="flipAllCards()">Click me or Hover Cards</button>    
+            <div class="flip-card-container"> 
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card1">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>                      
+                      <div id="flip-card-back"></div>
+                    </div>
                 </div>
-                <div class="contact-column">
-                    <h3>Social Media</h3>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/"><img class="dev_ico1" src="images/social (1).png" width="30" height="30"></a>
-                        <a href="https://www.github.com/"><img class="dev_ico1" src="images/social_git.png" width="30" height="30"></a>
-                        <a href="https://www.instagram.com/"><img class="dev_ico1" src="images/video.png" width="30" height="30"></a>
-                        <a href="https://www.discord.com/"><img class="dev_ico1" src="images/logo.png" width="30" height="30"></a>
-                        <a href="mailto:adrien_dejonc@eticalgarve.com"><img class="dev_ico1" src="images/mail.png" width="30" height="30"></a>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card2">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/error.png" width="90" height="90" style="padding-top: 5px"></div><p>etic_EATS<br><br>This project have some issues</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card3">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/beta.png" width="90" height="90" style="padding-top: 5px"></div><p>My Portfolio<br><br>First version!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card4">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/check-mark.png" width="90" height="90" style="padding-top: 5px"></div><p>To-do List<br><br>Check my project!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card5">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card6">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card7">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card8">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card9">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card10">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card11">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card12">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card13">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card14">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>
+                      <div id="flip-card-back"></div>
+                    </div>
+                </div>
+
+                <div id="card_box">
+                    <div class="flip-card" id="flip-card15">
+                      <div id="flip-card-front"><div class="card_banner"><img src="../images/work-in-progress (1).png" width="90" height="90" style="padding-top: 5px"></div><p>I'm still working on this project!</p></div>
+                      <div id="flip-card-back"></div>
                     </div>
                 </div>
             </div>
+
+
         </div>
-        <div class="contact-form">
-            <h2>CONTACT FORM</h2>
-            <form>
-                <input type="text" name="name" placeholder="John Doe" required>
-                <input type="email" name="email" placeholder="john_doe@gmail.com" required>
-                <textarea name="message" placeholder="Leave me a message..." rows="1" required></textarea>
-                <button type="submit">SEND</button>
-            </form>
+        <footer>
+            <div class="box_footer">
+                <div class="box7">
+                    <div class="footer_container">
+                    <div class="cards">
+                        <div class="card">
+                            <div id="contact_me" class="contact-info">
+                                <h2>DO YOU HAVE A PROJECT TO DISCUSS?</h2>
+                                <p>GET IN TOUCH<img class="dev_ico1" src="images/chat (1).png" width="30" height="30">
+                                </p>
+                                <div class="contact-details">
+                                    <div>
+                                        <h3>Contact</h3>
+                                        <p class="email">adrien_dejonc@eticalgarve.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="contact-column">
+                                <h3>Social Media</h3>
+                                <div class="social-icons">
+                                    <a href="https://www.linkedin.com/"><img class="dev_ico1"
+                                            src="images/social (1).png" width="30" height="30"></a>
+                                    <a href="https://www.github.com/"><img class="dev_ico1" src="images/social_git.png"
+                                            width="30" height="30"></a>
+                                    <a href="https://www.instagram.com/"><img class="dev_ico1" src="images/video.png"
+                                            width="30" height="30"></a>
+                                    <a href="https://www.discord.com/"><img class="dev_ico1" src="images/logo.png"
+                                            width="30" height="30"></a>
+                                    <a href="mailto:adrien_dejonc@eticalgarve.com"><img class="dev_ico1"
+                                            src="images/mail.png" width="30" height="30"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="contact-form">
+                                <h2>CONTACT FORM</h2>
+                                <form>
+                                    <input type="text" name="name" placeholder="John Doe" required>
+                                    <input type="email" name="email" placeholder="john_doe@gmail.com" required>
+                                    <textarea name="message" placeholder="Leave me a message..." rows="1"
+                                        required></textarea>
+                                    <button type="submit">SEND</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="copyright">Copyright &copy; 2025 <b>Adrien Dejonc</b>. All Rights Reserved.</b></p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</div>
-</main>
-<footer>
-<div class="footer_bar">
-<div class="copyright">Copyright &copy; 2025 <b>Adrien Dejonc</b>. All Rights Reserved.</b></div>
-</div>
-</footer>
+        </footer>
+        <script src="../scripts/flip.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/particles.js"></script>
+    </main>
 </body>
 </html>
