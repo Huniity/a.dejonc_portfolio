@@ -413,6 +413,11 @@ header {
     background-image: linear-gradient(to right bottom, #685ffb, #0088ff, #00a7ff, #00c0ff, #00d5fa, #00d5fa, #00d5fa, #00d5fa, #00c0ff, #00a7ff, #0088ff, #685ffb);
 }
 
+.erro {
+    border: 2px color red;
+}
+
+
 @media (max-width: 1440px) {
     .vl {
         height: 2300px
@@ -497,6 +502,14 @@ header {
 }
 
 @media (max-width: 425px) {
+
+    .navbar nav {
+        gap: 10px;
+    }
+
+    .navbar .home-button img{
+        width: 40px;
+    }
 
     #dark-mode-toggle-sun {
         display: none;
