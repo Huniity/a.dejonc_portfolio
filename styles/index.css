@@ -364,8 +364,14 @@ header {
   .dark h1, .dark th, .dark td, .dark h2, .dark p, .dark h3, .dark h4 {
     color: black;
    }
- .dark .box_ico{
-    filter: drop-shadow(0 1px 10px rgb(0, 0, 0));
+   
+ .dark .box_ico {
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+
+.dark .dev_ico1 {
+    filter: grayscale(0%);
 }
 
 .dark p.email {
@@ -391,6 +397,16 @@ header {
 .dark .contact-form button {
     color: black;
     background: linear-gradient(125deg, #06cef1, #dd62f0);
+}
+
+.dark .contact-column .dev_ico1 {
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+
+.dark .contact-info p .dev_ico1 {
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
 }
 
 .dark canvas {
