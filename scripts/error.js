@@ -23,6 +23,7 @@ formulario.addEventListener("submit", (evento) => {
         evento.preventDefault();
         document.getElementById("erro-name").innerText = "O campo 'Nome' é obrigatório.";
         document.getElementById("name").classList.add("error");
+        document.getElementById("name").style.borderColor = "red";
         formIsValid = false;
     }
 
@@ -30,6 +31,7 @@ formulario.addEventListener("submit", (evento) => {
         evento.preventDefault();
         document.getElementById("erro-email").innerText = "Introduza um e-mail válido.";
         document.getElementById("email").classList.add("error");
+        document.getElementById("email").style.borderColor = "red";
         formIsValid = false;
     }
 
@@ -37,6 +39,7 @@ formulario.addEventListener("submit", (evento) => {
         evento.preventDefault();
         document.getElementById("erro-message").innerText = "Introduza uma mensagem.";
         document.getElementById("message").classList.add("error");
+        document.getElementById("message").style.borderColor = "red";
         formIsValid = false;
     }
 });

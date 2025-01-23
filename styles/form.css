@@ -68,18 +68,10 @@
     
 }
 
-.error {
-    border: 2px color red !important;
-}
-
 .contact-form input:focus, .contact-form textarea:focus {
     outline: none;
     border-color: #e1b000;
 }
-
-
-
-
 
 .contact-form button {
     background: linear-gradient(180deg, #06cef1, #000001);
