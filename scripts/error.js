@@ -18,28 +18,35 @@ formulario.addEventListener("submit", (evento) => {
 
     let formIsValid = true;
 
-
-    if (!name.trim()) {
+    const nameRegex = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/gim;
+    if (!nameRegex.test(name)) {
         evento.preventDefault();
-        document.getElementById("erro-name").innerText = "O campo 'Nome' é obrigatório.";
+        document.getElementById("erro-name").innerText = "Required and should not contain special characters.";
         document.getElementById("name").classList.add("error");
         document.getElementById("name").style.borderColor = "red";
         formIsValid = false;
+    } else {
+        document.getElementById("name").style.borderColor = "green";
     }
 
-    if (!email.includes("@")) {
+    const emailRegex = /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/gim;  // Simple but effective email regex
+    if (!emailRegex.test(email)) {
         evento.preventDefault();
-        document.getElementById("erro-email").innerText = "Introduza um e-mail válido.";
+        document.getElementById("erro-email").innerText = "Valid email is required.";
         document.getElementById("email").classList.add("error");
         document.getElementById("email").style.borderColor = "red";
         formIsValid = false;
+    }   else {
+        document.getElementById("email").style.borderColor = "green";
     }
 
     if (!message.trim()) {
         evento.preventDefault();
-        document.getElementById("erro-message").innerText = "Introduza uma mensagem.";
+        document.getElementById("erro-message").innerText = "A message is required.";
         document.getElementById("message").classList.add("error");
         document.getElementById("message").style.borderColor = "red";
         formIsValid = false;
+    } else {
+        document.getElementById("message").style.borderColor = "green";
     }
 });

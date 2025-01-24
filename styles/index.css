@@ -250,9 +250,8 @@ main {
 .copyright {
     width: 100%;
     border-top: 1px solid rgb(255, 255, 255);
-    padding-top: 50px;
+    padding-top: 30px;
     align-items: center;
     text-align: center;
     bottom: 0;
-    margin-bottom: 25px;
 }
