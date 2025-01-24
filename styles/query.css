@@ -203,7 +203,8 @@
 
     canvas {
         padding-top: 250px;
-        height:70%;
+        height: auto;
+        width: auto;
     }
 
     .cards {
