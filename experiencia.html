@@ -10,16 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/form.css">
     <link rel="stylesheet" href="./styles/experience.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/query.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
     <canvas id="canvas"></canvas>
     <main>
         <header>
-            <div class="navbar_container" id="navbar"></div>
+            <div class="navbar_container" id="my_navbar"></div>
         </header>
         <div class="main_container">
             <h1 class="title_project">MY PROJECTS</h1>
@@ -169,29 +171,29 @@
                               </div>
                           </div>
                           <div class="card">
-                              <div class="contact-form">
-                                  <h2>CONTACT FORM</h2>
-                                  <form id="my_form">
-                                      <input id="name" type="text"  name="name" placeholder="John Doe">
-                                      <p id="erro1" style="color: red;"></p>
-                                      <input id="email" type="email" name="email" placeholder="john_doe@gmail.com">
-                                      <p id="erro2" style="color: red;"></p>
-                                      <textarea id="message" name="message" placeholder="Leave me a message..." rows="1" ></textarea>
-                                      <p id="erro3" style="color: red;"></p>
-                                      <button type="submit">SEND</button>
-                                  </form>
-                              </div>
-                          </div>
-                      </div>
-                      <p class="copyright">Copyright &copy; 2025 <b>Adrien Dejonc</b>. All Rights Reserved.</b></p>
-                  </div>
-              </div>
-      </footer>
-  </main>
-  </div>
-      <script src="./scripts/flip.js"></script>
-      <script src="./scripts/main.js"></script>
-      <script src="./scripts/particles.js"></script>
-      <script src="./scripts/error.js" defer></script>
+                            <div class="contact-form">
+                                <h2>CONTACT FORM</h2>
+                                <form id="my_form">
+                                    <input id="name" type="text" name="name" placeholder="John Doe">
+                                    <p id="erro-name" style="color: red;"></p>
+                                    <input id="email" type="email" name="email" placeholder="john_doe@gmail.com">
+                                    <p id="erro-email" style="color: red;"></p>
+                                    <textarea id="message" name="message" placeholder="Leave me a message..." rows="1"></textarea>
+                                    <p id="erro-message" style="color: red;"></p>
+                                    <button type="submit">SEND</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="copyright">Copyright &copy; 2025 <b>Adrien Dejonc</b>. All Rights Reserved.</b></p>
+                </div>
+            </div>
+    </footer>
+</main>
+</div>
+    <script src="./scripts/flip.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/particles.js" defer></script>
+    <script src="./scripts/error.js" defer></script>
 </body>
 </html>
