@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+    loadNavbar();
+
+
 async function loadNavbar() {
   const response = await fetch("./components/navbar.html");
   const navbarHtml = await response.text();
@@ -5,7 +9,7 @@ async function loadNavbar() {
 }
 
 loadNavbar();
-
+});
 
 function checkDarkMode() {
   const hasDarkMode = window.localStorage.getItem("darkMode");
